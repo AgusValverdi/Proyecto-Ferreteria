@@ -1,0 +1,79 @@
+.indicacion {
+	background-color: black;
+	color: white;
+	font-size: 15px;
+	width: 75%;
+	padding: 10px 10px;
+	margin: auto;
+	border: 3px solid;
+	text-align: center;
+}
+#main-container {
+	margin: auto;
+	width: 75%;
+	height: 350px;
+	overflow: auto;
+}
+table {
+	background-color: rgb(153, 153, 158);
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+th {
+	padding: 20px;
+	background-color: rgb(255, 255, 255);
+	border-bottom: solid 5px rgb(153, 153, 158)e;
+}
+td {
+	padding: 20px;
+}
+tr {
+	background-color: white;
+	&:hover {
+		td {
+			background-color: white;
+			color: rgb(10, 10, 10);
+		}
+	}
+}
+.indicacion2 {
+	background-color: black;
+	color: white;
+	font-size: 15px;
+	width: 75%;
+	padding: 10px 10px;
+	margin: auto;
+	border: 3px solid;
+	text-align: center;
+}
+.formularioDeDatos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: black;
+	color: white;
+	height: 100%;
+	width: 75%;
+	line-height: 30px;
+	text-align: center;
+	font-size: 15px;
+	margin: auto;
+}
+.botoneras {
+	display: flex;
+	justify-content: center;
+}
+.botoneraX {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	border: none;
+	width: 15em;
+	height: 2em;
+	border-radius: 0.5em;
+	margin-top: 2em;
+	text-align: center;
+	margin-right: 10px;
+	cursor: pointer;
+}

@@ -1,0 +1,73 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+}
+body {
+	background-color: white;
+}
+@import "./abstracts/mixin";
+@import "https://fonts.googleapis.com/css?family=Roboto:400,500,300,700";
+@import "indexS";
+@import "presupuestoS";
+@import "productoS";
+@import "promocionesS";
+@import "servicios";
+@import "info";
+
+.footer-distributed {
+	background-color: #ffffff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
+	position: absolute;
+	p.footer-links {
+		font-size: 18px;
+		font-weight: bold;
+		color: black;
+		margin: 0 0 10px;
+		padding: 0;
+		transition: ease .25s;
+		a {
+			display: inline-block;
+			line-height: 1.8;
+			text-decoration: none;
+			color: inherit;
+			transition: ease .25s;
+		}
+	}
+	.footer-links {
+		a {
+			&:before {
+				content: "·";
+				font-size: 20px;
+				left: 0;
+				color: #fff;
+				display: inline-block;
+				padding-right: 5px;
+			}
+		}
+		.link-1 {
+			&:before {
+				content: none;
+			}
+		}
+	}
+	.footer-right {
+		float: right;
+		margin-top: 6px;
+		max-width: 180px;
+	}
+}
+@media  only screen and (max-width:600px) {
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
